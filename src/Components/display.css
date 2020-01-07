@@ -4,11 +4,11 @@
 }
 #container1{
     display:flex;
-    background-color: rgb(159, 204, 223);
+    background-color: rgb(189, 216, 230);
     height: fit-content;
 }
 #header{
-    background-color: rgb(198, 236, 252);
+    background-color: rgb(231, 244, 250);
     text-align: center;
 }
 #contents{
@@ -28,7 +28,7 @@
 #ingredients{
     text-align: left;
     padding: 20px;
-    background-color: hsl(0,10%,82%);
+    background-color: hsl(0,10%,85%);
     height: 250px;
     overflow: scroll;
     margin-right: 20px;
