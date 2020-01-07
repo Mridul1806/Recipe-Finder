@@ -16,20 +16,17 @@ class App extends React.Component{
    axios.get("https://www.themealdb.com/api/json/v1/1/search.php?s="+ name)
    .then(res=>{
      console.log(res)
-     if(res.data.meals===null)
-     {
-      this.setState(
-        { status:"notFound"}
-      )
-     }
-     else{
+    //  if(res.data.meals===null)
+    //  {
+    //   this.setState(
+    //     { status:"notFound"}
+    //   )
+    //  }
+    //  else{
     this.setState(
-      {
-        ingredients:res.data.meals,
-        status:null
-      }
+      {ingredients:res.data.meals}
     )
-     }
+    //  }
    }
    )
   

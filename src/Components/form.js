@@ -18,14 +18,14 @@ class Form extends Component {
       <div style={container}>
         <h1 style={{ color: "hsl(0, 40%, 50%)" }}>Recipe Finder</h1>
         <div style={form}>
-          <form onSubmit={this.handleSubmit}>
+          <form >
             <input
               style={input}
               placeholder="Enter the Name of the Dish"
               id="name"
               onChange={this.handleChange}
             />
-            <button style={button}>Get Ingredient</button>
+            <button style={button} onClick={this.handleSubmit}  >Get Ingredient</button>
           </form>
         </div>
       </div>

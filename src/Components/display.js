@@ -52,7 +52,7 @@ const Display = ({ ingredients }) => {
     </div>
       )
    : (
-     <h2>hello</h2>
+     <h2>Type a Dish Name to Search fot it's ingredient</h2>
     );
 };
 
