@@ -1,15 +1,32 @@
 import React from 'react';
-// import logo from './logo.svg';
+import axios from 'axios';
 import './App.css';
+import Display from './Components/display'
+import Form from './Components/form'
 
-function App() {
-  return (
+class App extends React.Component{
+  state ={
+    ingredients:[]
+  }
+  generateApi=(name)=>{
+   axios.get("https://www.themealdb.com/api/json/v1/1/search.php?s=pasta")
+   .then(res=>{
+     console.log(res)
+    this.setState(
+      {ingredients:res.data.meals}
+    )
+   }
+   )
+  }
+  render(){
+    return (
     <div className="App">
-     My App recipe
-     Hello world
-        <div id="hello">Hello my sun</div>
+     <Form generateApi={this.generateApi}/>
+     <Display  ingredients={this.state.ingredients } />
     </div>
-  );
+  
+   );
+ }
 }
 
 export default App;

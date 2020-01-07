@@ -1,0 +1,22 @@
+#container{
+ width:95%;
+ margin:auto;
+}
+#container1{
+    display:flex
+}
+#header{
+    background-color: rgb(202, 211, 30);
+}
+#image img{
+    height:400px;
+    width:400px;
+    border:2px solid black;
+}
+#categories{
+    text-align: left;
+    line-height: .2em;
+}
+#ingredients{
+    text-align: left;
+}
