@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
+import './Components/display.css';
 import Display from './Components/display'
 import Form from './Components/form'
 
@@ -13,7 +14,7 @@ class App extends React.Component{
     this.setState(
       { status:"loading"}
     )
-   axios.get("https://www.themealdb.com/api/json/v1/1/search.php?s="+ name)
+   axios.get("https://www.themealdb.com/api/json/v1/1/search.php?s="+name)
    .then(res=>{
      console.log(res)
      if(res.data.meals===null)
@@ -40,7 +41,7 @@ class App extends React.Component{
      <Form generateApi={this.generateApi}/>
      {this.state.status==="loading"&&<div id ="noDisplay">Loading</div>}
      {this.state.status==="notFound"&&<div id ="notFound">No Data has been Found</div>}
-     <Display  ingredients={this.state.ingredients } />
+     {this.state.status===null&&<Display  ingredients={this.state.ingredients } />}
     </div>
   
    );

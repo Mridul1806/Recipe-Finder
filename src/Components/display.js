@@ -13,38 +13,41 @@ const Display = ({ ingredients }) => {
 
           <div id="contents">
             <div id="categories">
-              <p>{ingredients[0].strCategory}</p>
-              <p>{ingredients[0].strArea}</p>
+              <p>Category of meal - {ingredients[0].strCategory}</p>
+              <p>Area of meal - {ingredients[0].strArea}</p>
+              <br></br>
             </div>
-
+            <p style={{ textAlign: "left" }}>Ingredients</p>
+            
             <div id="ingredients">
               <p>
-                {ingredients[0].strIngredient1}--{ingredients[0].strMeasure1}
+                {ingredients[0].strIngredient1}----{ingredients[0].strMeasure1}
               </p>
               <p>
-                {ingredients[0].strIngredient2}--{ingredients[0].strMeasure2}
+                {ingredients[0].strIngredient2}----{ingredients[0].strMeasure2}
               </p>
               <p>
-                {ingredients[0].strIngredient3}--{ingredients[0].strMeasure3}
+                {ingredients[0].strIngredient3}----{ingredients[0].strMeasure3}
               </p>
               <p>
-                {ingredients[0].strIngredient4}--{ingredients[0].strMeasure4}
+                {ingredients[0].strIngredient4}----{ingredients[0].strMeasure4}
               </p>
               <p>
-                {ingredients[0].strIngredient5}--{ingredients[0].strMeasure5}
+                {ingredients[0].strIngredient5}----{ingredients[0].strMeasure5}
               </p>
               <p>
-                {ingredients[0].strIngredient6}--{ingredients[0].strMeasure6}
+                {ingredients[0].strIngredient6}----{ingredients[0].strMeasure6}
               </p>
               <p>
-                {ingredients[0].strIngredient7}--{ingredients[0].strMeasure7}
+                {ingredients[0].strIngredient7}----{ingredients[0].strMeasure7}
               </p>
               <p>
-                {ingredients[0].strIngredient8}--{ingredients[0].strMeasure8}
+                {ingredients[0].strIngredient8}----{ingredients[0].strMeasure8}
               </p>
             </div>
 
             <div id="recipes">
+              <p>Recipes</p>
               <p>{ingredients[0].strInstructions}</p>
             </div>
          </div>   
@@ -52,7 +55,7 @@ const Display = ({ ingredients }) => {
     </div>
       )
    : (
-     <h2>Type a Dish Name to Search fot it's ingredient</h2>
+     <h2>Type a Dish Name to Search for it's ingredient</h2>
     );
 };
 

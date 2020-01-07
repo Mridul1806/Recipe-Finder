@@ -1,12 +1,20 @@
 #container{
- width:95%;
+ width:99%;
  margin:auto;
 }
 #container1{
-    display:flex
+    display:flex;
+    background-color: rgb(159, 204, 223);
+    height: fit-content;
 }
 #header{
-    background-color: rgb(202, 211, 30);
+    background-color: rgb(198, 236, 252);
+    text-align: center;
+}
+#contents{
+    text-align: center;
+    line-height: 1em;
+    margin: 30px;
 }
 #image img{
     height:400px;
@@ -19,4 +27,14 @@
 }
 #ingredients{
     text-align: left;
+    padding: 20px;
+    background-color: hsl(0,10%,82%);
+    height: 250px;
+    overflow: scroll;
+    margin-right: 20px;
+    line-height: 2em;
 }
+#recipes{
+    text-align: center;
+    margin-top: 20px;
+  }
