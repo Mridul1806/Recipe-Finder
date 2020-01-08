@@ -9,8 +9,15 @@
 }
 #header{
     background-color: rgb(231, 244, 250);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.headerIcon{
+    font-size: 1.5em;
+  position: absolute;
+  left: 90%;
+  }
 #contents{
     text-align: center;
     line-height: 1em;
