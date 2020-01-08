@@ -51,11 +51,9 @@ const Display = ({ ingredients }) => {
               {ingredients[0].strIngredient8}----{ingredients[0].strMeasure8}
             </p>
           </div>
-
-          <div id="recipes">
-            <p>Recipes</p>
-            <p>{ingredients[0].strInstructions}</p>
-          </div>
+          <br></br>
+          <p style={{ textAlign: "center" }}>Recipes</p>
+          <p style={{ textAlign: "left" }}>{ingredients[0].strInstructions}</p>
         </div>
       </div>
     </div>

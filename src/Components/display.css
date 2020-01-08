@@ -34,14 +34,10 @@
 }
 #ingredients{
     text-align: left;
-    padding: 20px;
+    padding: 10px;
     background-color: hsl(0,10%,85%);
     height: 250px;
     overflow: scroll;
     margin-right: 20px;
-    line-height: 2em;
+    line-height: 1.5em;
 }
-#recipes{
-    text-align: center;
-    margin-top: 20px;
-  }
