@@ -18,14 +18,16 @@ class Form extends Component {
       <div style={container}>
         <h1 style={{ color: "hsl(0, 10%, 50%)" }}>Recipe Finder</h1>
         <div style={form}>
-          <form >
+          <form>
             <input
               style={input}
               placeholder="Enter the Name of the Dish"
               id="name"
               onChange={this.get}
             />
-            <button style={button} onClick={this.set}  >Get Ingredient</button>
+            <button style={button} onClick={this.set}>
+              Get Ingredient
+            </button>
           </form>
         </div>
       </div>

@@ -1,18 +1,11 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import Header from "./header";
 import "./display.css";
 
 const Display = ({ ingredients }) => {
   return ingredients.length ? (
     <div id="container" keys={ingredients[0].idMeal}>
-      <div id="header">
-        <h1>{ingredients[0].strMeal}</h1>
-        <FontAwesomeIcon
-          icon={faHeart}
-          className="headerIcon"
-        />
-      </div>
+      <Header header={ingredients[0].strMeal} />
       <div id="container1">
         <div id="image">
           <img src={ingredients[0].strMealThumb} alt="not found" />
@@ -63,12 +56,3 @@ const Display = ({ ingredients }) => {
 };
 
 export default Display;
-// .header_icon_red{
-//   font-size: 1.5em;
-// position: absolute;
-// left: 90%;
-// }
-// .header_icon:hover{
-//   cursor: pointer;
-//   color: red;
-// }  
